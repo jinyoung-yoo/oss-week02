@@ -11,8 +11,9 @@
 
 const n = Number(process.argv[2] ?? 5);
 
-const a = n/2 - 0.5;
+const a = n/2;
 let spaces, stars;
+
 for(let i=0; i<n; i++)
 {
     if(i<=a)
@@ -22,7 +23,7 @@ for(let i=0; i<n; i++)
     }
     else
     {
-        stars = (n - 1 -i)*2+1;
+        stars = (n - 1 - i)*2+1;
         spaces = (n - stars) / 2;
     }
         console.log(" ".repeat(spaces) + "*".repeat(stars));
